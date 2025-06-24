@@ -3,8 +3,8 @@
     --cor-fundo: #01080E;        /* Cor de fundo geral da página */
     --cor-principal: #0B0D20;    /* Cor da caixa principal */
     --cor-secundaria: #212333;   /* Cor dos botões */
-    --cor-destaque: #00d9ff;     /* Cor de destaque usada em títulos e hover */
-    --cor-texto: #D7F9FF;        /* Cor padrão dos textos */
+    --cor-destaque: #0033ff;     /* Cor de destaque usada em títulos e hover */
+    --cor-texto: #9af0ff;        /* Cor padrão dos textos */
 }
 
 /* Estilização do corpo da página */
