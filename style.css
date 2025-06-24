@@ -1,0 +1,57 @@
+/* Definição de variáveis de cores para manter um padrão visual no projeto */
+:root {
+    --cor-fundo: #01080E;        /* Cor de fundo geral da página */
+    --cor-principal: #0B0D20;    /* Cor da caixa principal */
+    --cor-secundaria: #212333;   /* Cor dos botões */
+    --cor-destaque: #00d9ff;     /* Cor de destaque usada em títulos e hover */
+    --cor-texto: #D7F9FF;        /* Cor padrão dos textos */
+}
+
+/* Estilização do corpo da página */
+body {
+    margin: 0; /* Remove margens padrão do navegador */
+    padding: 0; /* Remove preenchimentos padrão */
+    
+    background-color: var(--cor-fundo); /* Define a cor de fundo da página */
+    color: var(--cor-texto); /* Define a cor padrão do texto */
+
+    display: flex; /* Ativa o Flexbox para centralizar */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    min-height: 100vh; /* Garante que a altura mínima da página ocupe toda a tela */
+}
+
+/* Estilização da caixa que contém as perguntas e alternativas */
+.caixa-principal {
+    background-color: var(--cor-principal); /* Cor de fundo da caixa */
+    opacity: 0.8; /* Transparência leve para o fundo */
+    width: 90%; /* Largura responsiva da caixa */
+    max-width: 600px; /* Largura máxima para manter leitura confortável */
+    text-align: center; /* Centraliza o conteúdo dentro da caixa */
+    padding: 20px; /* Espaçamento interno */
+    box-sizing: border-box; /* Inclui padding dentro da largura total */
+    position: relative; /* Permite uso de z-index */
+    z-index: 1; /* Garante que esta caixa fique acima de outros elementos, se necessário */
+}
+
+/* Estilização do título principal */
+h1 {
+    color: var(--cor-destaque); /* Cor de destaque para o título */
+}
+
+/* Estilização dos botões de alternativas */
+button {
+    background-color: var(--cor-secundaria); /* Cor de fundo dos botões */
+    color: var(--cor-texto); /* Cor do texto nos botões */
+    border: none; /* Remove a borda padrão */
+    border-radius: 15px; /* Bordas arredondadas */
+    padding: 15px; /* Espaçamento interno do botão */
+    transition: background-color 0.3s; /* Animação suave ao passar o mouse */
+    margin: 10px; /* Espaçamento externo entre os botões */
+}
+
+/* Estilização para o efeito hover (quando o mouse passa em cima do botão) */
+button:hover {
+    background-color: var(--cor-destaque); /* Altera a cor de fundo ao passar o mouse */
+    color: var(--cor-principal); /* Muda a cor do texto ao passar o mouse */
+}
